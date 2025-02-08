@@ -173,6 +173,11 @@
 							<option value="64*48 inches (162*123cm)">64*48 inches (162*123cm)</option>
 						</select>
 					</div>
+					<div class="container-button desktop-hidden">
+						<button class="minus-button">-</button>
+						<input type="number" id="quantity" value="0">
+						<button class="plus-button">+</button>
+					</div>
 
 				</div>
 				<div class="price-bar">
@@ -184,7 +189,7 @@
 				</div>
 				<div class="add-to-cart">
 					<button class="add-button">ADD TO CART</button>
-					<div class="container-button">
+					<div class="container-button mobile-hidden">
 						<button class="minus-button">-</button>
 						<input type="number" id="quantity" value="0">
 						<button class="plus-button">+</button>

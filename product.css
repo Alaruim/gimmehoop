@@ -1668,9 +1668,8 @@ input[type="number"] {
       margin-bottom: 0;
       flex: none;
       .swiper{
-        height: 250px;
-        width: 250px;
-        
+        height: 320px;
+        width: 320px;
       }
     }
   }

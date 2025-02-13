@@ -88,19 +88,7 @@ const swiper = new Swiper('.swiper-container', {
 });
 //////////////////////////////////////////////////////////////////////
 
-const button = document.getElementById("toggleButton");
-const dropdown = document.getElementById("dropdown");
 
-button.addEventListener("click", (event) => {
-  event.stopPropagation(); // Предотвращаем всплытие клика
-  dropdown.classList.toggle("visible");
-});
-
-document.addEventListener("click", (event) => {
-  if (!dropdown.contains(event.target) && !button.contains(event.target)) {
-    dropdown.classList.remove("visible");
-  }
-});
 //////////////////////////////////////////////////////////////////////
 var swiper_hidden = new Swiper(".mySwiper", {
   pagination: {
@@ -131,21 +119,6 @@ var swiper2 = new Swiper(".mySwiper2", {
   simulateTouch: false,
 });
 
-document.addEventListener("click", function (event) {
-  const button = event.target.closest("[data-elem]"); // Проверяем клик на кнопку
-  const popup = document.querySelector(".review-popup"); // Окно
-
-  // Если клик был на кнопке, то показываем окно
-  if (button) {
-      const targetSelector = button.getAttribute("data-elem");
-      const targetElement = document.querySelector(targetSelector);
-      targetElement.classList.toggle("active");
-  } 
-  // Если клик был не на кнопке и не на окне, то закрываем окно
-  else if (!popup.contains(event.target)) {
-      popup.classList.remove("active");
-  }
-});
 
 // Код для кнопки .see-all-photo
 const seeAllPhotoButton = document.querySelector(".see-all-photo");

@@ -1801,7 +1801,8 @@ input[type="number"] {
 
   .faq-center{
     display: flex;
-    
+    justify-content: center;
+
   }
   .mini-faq{
     gap: 15px;

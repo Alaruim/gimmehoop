@@ -195,7 +195,7 @@ button{
 
 .block-product-description{
   text-align: center;
-  margin-top: 44px;
+  margin-top: 27px;
   h2 {
     line-height: 1.1;
     font-size: 30px;
@@ -213,10 +213,10 @@ button{
   }
   p {
     margin: 17px auto 0;
-    font-size: 11px;
+    font-size: 13px;
     width: 240px;
     max-width: 100%;
-
+    line-height: 1.53;
   }
   
 }
@@ -236,12 +236,12 @@ button{
 /* Контейнер с изображением */
 .block-product-image {
   flex: 2;
-  height: 720px;
+  height: 762px;
   position: relative;
 }
 
 .block-product-tags{
-  margin-top: 32px;
+  margin-top: 47px;
   display: flex;
   flex-wrap: wrap;
   font-weight: 700;
@@ -302,11 +302,10 @@ button{
 }
 
 .block-product-selling{
-  h2{
-    margin-top: 30px;
-  }
   h1{
-    margin-top: 12px;
+    margin-top: 29px;
+    font-weight: 900;
+    line-height: 1.1;
   }
 }
 
@@ -327,22 +326,16 @@ button{
 .bar-stars {
   display: flex;
   gap: 2px;
-  svg{
-    color: #C9C9C9;
-  }
-  .filled{
-    color: #060606
-  }
 }
 
 .dropdown-container > span{
+  margin-right: 21px;
   font-size: 15px;
   font-weight: 500;
 }
 
 .custom-select {
   position: relative;
-  width: 200px;
   cursor: pointer;
   font-size: 11px;
   font-weight: 500 ;
@@ -352,10 +345,10 @@ button{
 .selected {
   background: #fff;
   border: 1px solid #000;
-  padding: 10px;
+  padding: 13px 11px 12px 11px;
   border-radius: 5px;
 
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
 
   white-space: nowrap;
@@ -364,10 +357,9 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  img {
-    padding-right: 11px;
-  }
+
   span {
+    line-height: 1.1;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -414,12 +406,18 @@ button{
   display: block;
 }
 
-.dropdown-container{
-  margin-top: 22px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.block-product-selling{
+  .dropdown-container{
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+  }
+  .custom-select {
+    width: 220px;
+    height: 39px;
+  }
 }
+
 
 /* Скрытый селект */
 .hidden-select {
@@ -428,19 +426,20 @@ button{
 
 .price-bar{
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 52px;
   display: flex;
   align-items: flex-end;
   .act-price{
     font-size: 24px;
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.1;
   }
   span{
     color: #c9c9c9;
     text-decoration: line-through;
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.1;
   }
 }
 
@@ -473,11 +472,12 @@ button{
     margin-top: 11px;
     font-size: 11px;
     font-weight: 500;
+    line-height: 1.1;
   }
 }
 
 .add-to-cart{
-  margin-top: 30px;
+  margin-top: 23px;
   display: flex;
   align-items: center;
   gap: 31px;
@@ -489,9 +489,11 @@ button{
     background-image: url("images/add-to-cart.png");
     background-size: cover; 
     background-repeat: no-repeat; 
-    padding: 17px 48px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    padding: 17px 0px 16px;
     background-color: #000;
+    line-height: 1.1;
+    font-family: 'Inter', sans-serif;
+    width: 285px;
   }
   .add-button:hover{
     background-image: none;
@@ -549,6 +551,11 @@ input[type="number"] {
   border-bottom-left-radius: 0;
 }
 
+.img-card{
+  margin-top: 21px;
+  width: 285px;
+}
+
 .container-button{
   display: flex;
   align-items: center;
@@ -559,67 +566,36 @@ input[type="number"] {
 }
 
 .delivery{
-  margin-top: 14px;
+  margin-top: 25px;
   font-weight: 500;
-  font-size: 11px;
+  font-size: 13px;
   span{
     display: block;
+  }
+}
+
+.easy-returns{
+  border: 2px solid black;
+  border-radius: 3px;
+  width: 285px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 52px;
+  span{
+    margin-top: 20px;
+    line-height: 1.1;
+    font-size: 12px;
     font-weight: 700;
   }
-}
-
-.block-choose-size{
-  margin-top: 30px;
-  position: relative;
-  gap: 5px;
-  button{
-    font-size: 24px;
-    font-weight: 900;
-    img{
-      margin-top: 7px;
-    }
+  .p-ret{ 
+    width: 234px;
+    line-height: 1.22;
+    margin: 16px 25px 13px;
+    font-weight: 500;
+    font-size: 13px;
   }
-
-  .swiper {
-    width: 175px;
-    height: 236px;
-    --swiper-pagination-bottom: none;
-    --swiper-pagination-top: -30px;
-    --swiper-pagination-color: #000;
-  }
-
-  .hidden-slider {
-    padding: 34px 0 34px 0;
-    width: 285px; /* Ширина прямоугольника */
-    background-color: white;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top: 100%;
-    visibility: hidden;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    z-index: 10;
-  }
-
-  .hidden-slider.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(5px);
-  }
-
-  .swiper-button-prev, .swiper-button-next {
-    color: #D9D9D9;
-    --swiper-navigation-sides-offset: -50px;
-    --swiper-navigation-size: 28px;
-  }
-  .swiper-button-prev:hover, .swiper-button-next:hover{
-    color: #656565;
-  }
-}
-
-.choose-size-text{
-  margin-top: 16px;
-  font-weight: 400;
-  font-size: 11px;
 }
 
 .container-text-comment {
@@ -649,6 +625,8 @@ input[type="number"] {
 .slider-block-horizontal{
   margin-top: 20px;
   position: relative;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
   /* Подключение CSS для слайдера */
   .swiper-container {
     height: 280px; /* Высота слайдера */
@@ -677,18 +655,15 @@ input[type="number"] {
   }
 }
 
-.block-line-shadow {
-  border-top: 2px solid #D9D9D9;
+.block-line-shadow-border{
+  border-top: 2px solid rgba(0, 0, 0, 0.03);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 60px;
 
 }
 
-.block-slider-chosen{
-  display: flex;
+.block-line-shadow {
+  margin-top: 45px;
   .slider-cart{
-    margin-top: 35px;
-    margin-bottom: 35px;
     flex: 1;
     .swiper {
       width: 370px;
@@ -706,53 +681,92 @@ input[type="number"] {
     }
   }
   .chosen-desc{
+    
     flex: 1;
     display: flex;
     flex-direction: column;
-    text-align: right;
-    margin-right: 60px;
-    span{
-      margin-top: 79px;
-      font-weight: 400;
-      font-size: 13px;
-      opacity: 55%;
-    }
+    justify-content: center;
     h3{
-      margin-top: 37px;
       font-weight: 900;
-      font-size: 40px;
+      font-size: 30px;
+      line-height: 1.24;
     }
     p{
-      margin-top: 37px;
       font-weight: 400;
       font-size: 14px;
-    }
-    a{
-      margin-top: 37px;
-      font-weight: 700;
-      font-size: 14px;
-      text-decoration: none;
-      color: #000;
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
       line-height: 1.5;
-    }
-    a:hover{
-      opacity: 40%;
     }
   }
 }
 
+.block-slider-chosen1{
+
+  display: flex;
+
+  .chosen-desc{
+    justify-content: start;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    p{
+      margin-top: 43px;
+    }
+    li:first-child{
+      margin-top: 27px;
+    }
+    li{
+      direction: rtl;
+      list-style-position: inside;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.42;
+      margin-top: 13px;
+    }
+    .chosen-desc-block{
+      width: 482px;
+      margin-right: 60px;
+      margin-top: 91px;
+    }
+  }
+  .slider-cart{
+    margin-top: 47px;
+    margin-bottom: 78px;
+  }
+
+}
+.block-slider-chosen2{
+  display: flex;
+  .chosen-desc{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin-left: 57px;
+    p{
+      margin-top: 51px;
+      width: 480px;
+    }
+  }
+  .slider-cart{
+    margin-top: 81px;
+  }
+  
+}
+
 .image-line{
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 40px;
+  margin-top: 85px;
   background-image: url(images/image-line.png);
   height: 160px;
   width: 100%;
   background-size: cover; /* Растянет фон по контейнеру */
   background-position: center; /* Центрирует изображение */
   .content-image-line{
+    padding: 0 150px;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -773,7 +787,7 @@ input[type="number"] {
 }
 
 .block-top-reviews{
-  margin-top: 36px;
+  margin-top: 62px;
   .top-rev-header{
     display: flex;
     justify-content: space-between;
@@ -794,23 +808,43 @@ input[type="number"] {
   margin-right: 90px;
   gap: 48px;
   .mini-faq-text{
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
     text-align: center;
     border: 2px solid black;
     border-radius: 3px;
-    padding: 16px 25px 16px 25px;
+    height: 180px;
+    padding: 22px 24px;
   }
   span {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
+    line-height: 1.1;
   }
   p {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .faq1{
+    p{
+      width: 186px;
+    }
+  }
+  .faq2{
+    p{
+      width: 390px;
+    }
+  }
+  .faq3{
+    p{
+      width: 280px;
+    }
   }
 }
+
 
 .footer{
   margin-top: 60px;
@@ -946,7 +980,7 @@ input[type="number"] {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.37);
     span{
       padding-top: 18px;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 500;
       border-bottom: 1px solid #d8d8d8;
       padding-bottom: 15px;
@@ -978,6 +1012,8 @@ input[type="number"] {
       font-size: 12px;
       border: 1px solid black;
       border-radius: 3px;
+      font-family: 'Inter', sans-serif;
+
     }
     button:hover{
       background-color: #000;
@@ -1023,36 +1059,44 @@ input[type="number"] {
   gap: 22px;
   img {
     border-radius: 1px;
-    width: 150px; /* Устанавливаем ширину изображения */
-    height: 150px; /* Высота изображения будет зависеть от высоты контейнера */
+    width: auto; /* Устанавливаем ширину изображения */
+    height: auto; /* Высота изображения будет зависеть от высоты контейнера */
   }
   .rewiew-block{
 
+    .name-block{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      span{
+        margin-left: 5px;
+        font-weight: 400;
+        font-size: 11px;
+        color: #A0A0A0;
+      }
+    }
     .name{
-      padding-top: 15px;
       font-weight: 700;
       font-size: 20px;
+      margin-right: 13px;
+      line-height: 1.24;
     }
-    .product{
-      margin-top: 11px;
-      margin-bottom: 5px;
-      display: flex;
-      gap: 5px;
-      .product-name{
-        font-weight: 600;
-        font-size: 13px;
-      }
-      .product-size{
-        font-weight: 500;
-        font-size: 12px;
-        color: #b1b1b1;
-      }
+    .date{
+      margin-top: 7px;
+      font-weight: 600;
+      line-height: 1.1;
+      font-size: 11px;
+      color: #CFCFCF;
     }
-
+    .bar-stars{
+      margin-top: 24px;
+    }
     .rewiew-text{
+      line-height: 1.5;
       margin-top: 18px;
       font-weight: 500;
       font-size: 13px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -1063,6 +1107,7 @@ input[type="number"] {
   justify-content: center;
   gap: 62px;
   button{
+    font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 12px;
     color: #fff;
@@ -1090,6 +1135,7 @@ input[type="number"] {
     position: relative;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     padding: 30px;
+    height: 351px;
     .cust-rev-text{
       font-weight: 700;
       font-size: 26px;
@@ -1120,9 +1166,7 @@ input[type="number"] {
       .rait-num{
         width: 12px;
       }
-      svg{
-        color: #F27D00
-      }
+
       progress {
         margin-left: 14px;
         max-width: 100%;
@@ -1148,83 +1192,16 @@ input[type="number"] {
         height: 15px;
       }
     }
-    .rait-work{
-      display: flex;
-      align-items: center;
-      font-weight: 500;
-      font-size: 13px;
-      gap:15px;
-      margin-top: 26px;
-      position: relative;
-      z-index: 11;
-    }
-    /* Окно с текстом, которое будет появляться под кнопкой */
-    .review-popup {
-      display: none;
-      position: absolute;
-      top: 63%; /* Это ставит окно сразу под кнопкой */
-      left: 50%;
-      transform: translateX(-50%);
-      width: 300px;
-      padding: 15px;
-      background: white;
-      border: 1px solid #ccc;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-      z-index: 10; 
-    }
 
-    .review-popup.active {
-      display: block;
-    }
 
-    hr{
-      margin-top: 31px;
-      height: 1px;
-      background: rgba(0, 0, 0, 0.14); /* Цвет */
-      border: none; /* Убираем стандартную границу */
-    }
-    .rev-this-product{
-      font-weight: 700;
-      font-size: 20px;
-      margin-top: 31px;
-    }
-    .share-rev{
-      margin-top: 5px;
-      font-weight: 500;
-      font-size: 13px;
-    }
-    .view-all-rev{
-      background-image: url(images/button-rewiew-prev-next.png);
-      font-weight: 900;
-      font-size: 12px;
-      color: #fff;
-      height: 41px;
-      width: 276px;
-      border-radius: 3px;
-      margin-top: 26px;
-      background-color: #000;
-    }
-    .view-all-rev:hover, .view-all-rev:active{
-      background-image: none;
-    }
-  }
-}
 
-.bar-stars-rev {
-  display: flex;
-  gap: 2px;
-  svg{
-    color: #C9C9C9;
-  }
-  .filled{
-    color: #F27D00
+
   }
 }
 
 .customer-say{
   position: relative;
   overflow: hidden;
-  margin-top: 30px;
   .cust-say-head{
     font-weight: 700;
     font-size: 24px;
@@ -1234,9 +1211,16 @@ input[type="number"] {
     font-weight: 500;
     font-size: 14px;
   }
+  .cust-say-ai{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    opacity: 30%;
+    margin-top: 19px;
+  }
   .rev-images-block{
     display: flex;
-    margin-top: 58px;
+    margin-top: 28px;
     justify-content: space-between;
     align-items: center;
     .rev-images-text{
@@ -1249,7 +1233,7 @@ input[type="number"] {
       align-items: center;
 
       img{
-        transform: rotate(270deg);
+        margin-left: 9px;
       }
       span{
         font-weight: 500;
@@ -1358,8 +1342,8 @@ input[type="number"] {
     .swiper-wrapper{
       height: auto;
       img{
-        width: 100%;
-        height: 100%;
+        width: 150px;
+        height: 200px;
         object-fit: cover;
         object-position: center;
       }
@@ -1389,17 +1373,24 @@ input[type="number"] {
       transform: rotate(180deg);
     }
   }
-  hr{
-    margin-top: 26px;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.14); /* Цвет */
-    border: none; /* Убираем стандартную границу */
+
+}
+
+.cust-rev-dropdown-cont{
+  .dropdown-container{
+    margin-top: 25px;
+
+  }
+  .custom-select{
+    height: 43px;
+    width: 164px;
   }
 }
 
+
 @media (min-width: 768px){
   .desktop-hidden{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1407,7 +1398,8 @@ input[type="number"] {
 @media (max-width: 767px){
 
   .mobile-hidden{
-    display: none;
+    display: none !important;
+    
   }
   .navbar{
     /* Базовые стили бургер-меню */
@@ -1430,7 +1422,7 @@ input[type="number"] {
 
     /* Показать меню после клика на бургер-иконку */
     .show-menu .mobile-hidden {
-      display: block;
+      display: block !important;
       background-color: white;
       position: absolute;
       top: 100%; /* Расстояние от иконки */
@@ -1507,34 +1499,48 @@ input[type="number"] {
       }
 
     }
+
+
+
     .block-product-selling{
       order: 1;
       flex: none;
       margin: 0 20px;
+      .dropdown-container {
+        margin-top: 18px;
+      }
+      .dropdown-container > span{
+        margin-right: 10px;
+      }
       .bar-progress{
+        margin-top: 18px;
         progress{
-         width: 100%; 
+          height: 11px;
+          width: 100%;
         }
-        display: flex;
-        flex-direction: column;
         span{
-          margin-top: 4px;
+          display: block;
+          margin-top: 10px;
         }
       }
       .add-to-cart{
-        margin-top: 20px;
+        margin-top: 26px;
         justify-content: space-between;
       }
       .add-button{
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         width: 100%;
         height: 62px;
-        font-size: 22px;
+        font-size: 13px;
         align-items: center;
         display: flex;
         justify-content: center;
       }
+      .price-bar{
+        margin-top: 26px;
+      }
       .container-button{
-        
+        margin-left: 22px;
         input{
           height: 37px;
           width: 37px;
@@ -1550,6 +1556,7 @@ input[type="number"] {
         }
       }
       .delivery{
+        margin-top: 18px;
         display: flex;
         span{
           font-weight: 500;
@@ -1585,14 +1592,23 @@ input[type="number"] {
       }
       .block-product-tags{
         font-size: 12px;
-        margin-bottom: 42px;
+        margin-bottom: 31px;
       }
     }
   }
-  .block-line-shadow1{
+  .block-line-shadow-border{
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-   
-
+  }
+  .block-line-shadow{
+    margin-top: 0;
+    
+    h3{
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-top: 36px;
+    }
+    
     hr{
       
       margin-bottom: 35px;
@@ -1600,36 +1616,55 @@ input[type="number"] {
       background: rgba(0, 0, 0, 0.14); /* Цвет */
       border: none; /* Убираем стандартную границу */
     }
-    .block-slider-chosen{
+    .block-slider-chosen1{
+      align-items: center;
       display:flex;
       flex-direction: column;
+    }
+    .block-slider-chosen2{
+      align-items: center;
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      p{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 46px 17px 25px;
+      }
+      h3{
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-top: 36px;
+      }
     }
     .chosen-desc{
       flex:none;
       text-align: center;
       margin-right: 0;
+      margin-left: 0;
       span{
         margin-right: 20px;
         margin-left: 20px;
         font-size: 10px;
         margin-top: 0;
       }
-      h3{
-        font-size: 24px;
+      .chosen-desc-block{
+        width: auto;
+        margin: 46px 17px 25px;
       }
+
       p{
-        margin-right: 20px;
-        margin-left: 20px;
-        font-size: 11px;
-        margin-top: 45px;
-      }
-      a{
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 36px;
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
       }
     }
     .slider-cart{
+      margin-top: 38px;
       margin-bottom: 0;
       flex: none;
       .swiper{
@@ -1641,125 +1676,91 @@ input[type="number"] {
   }
 
   .image-line{
+    margin-top: 33px;
     height: 100px;
+    padding: 0;
   }
   .content-image-line{
-    flex-direction: column;
-    padding: 10px 0;
-  }
-  .block-reviews{
-    margin-top: 65px;
     display: flex;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .customer-say{
-    font-size: 16px;
-
-    margin-top: 0px;
-    .cust-say-head{
-      font-size: 16px;
-      margin-left: 17px;
-      margin-right: 17px;
-    }
-    .cust-say-text{
-      font-size: 11px;
-      margin-top: 14px;
-      margin-left: 17px;
-      margin-right: 17px;
-    }
-    .rev-images-block{
-      margin-top: 38px;
-    }
-    .rev-images-text{
-      font-size: 16px !important;
-      margin-left: 17px;
-    }
-    .see-all-photo{
-      margin-right: 17px;
-      span{
-
-        font-size: 11px !important;
+    padding: 0 37px !important;
+    span{
+      gap: 5px;
+      font-weight: 600 !important;
+      font-size: 8px !important;
+      line-height: 1.42 !important;
+      .img1{
+        width: 15px;
+        height: 11px;
+      }
+      .img2{
+        width: 12px;
+        height: 13px;
       }
     }
-    .photo-popup{
-      padding: 12px;
-    }
-    .scroll-popup{
-      padding-right: 2px;
-    }
-    .photo-popup-content{
-      display: grid;
-      width: 380px;
-   
-      grid-template-columns: repeat(2, 1fr); /* 5 равных колонок */
-      gap: 10px; /* Отступы между элементами */
-      div {
-        overflow: hidden;
-        height: 224px;
-      }
-  
-    }
 
-    .swiper-father{
-      padding: 0;
-      gap: 6px;
-    }
-    hr{
-      margin-left: 20px;
-      margin-right: 20px;
-    }
   }
+
+
+
+
   .block-top-reviews{
     margin: 0;
     .top-rev-header{
       display: flex;
       align-items: center;
-      margin-top: 19px;
-      .dropdown-container{
-        margin-top: 0px;
-        height: 29px;
-        width: 132px;
-        margin-right: 20px;
+      margin-top: 62px;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+      .selected{
+        padding: 7px 10px;
+        gap: 26px;
       }
     }
+
     .top-rew-1{
-      margin-left: 20px;
+
       font-size: 20px;
     }
     .rewiew{
       gap:0px;
+      margin-top: 25px;
       margin-left: 17px;
       margin-right: 17px;
+      .bar-stars{
+        margin-top: 13px;
+      }
       img{
-        width: 106px;
-        height: 143px;
+        width: 141px;
+        height: 211px;
+        object-fit: cover;
       }
       .rewiew-block{
         margin-left: 12px;
+        .name-block{
+          margin-top: 0;
+        }
       }
       .name{
+        margin-right: 7px;
         padding: 0;
         font-size: 15px;
       }
-      .product-name{
-        font-size: 12px;
-      }
-      .product-size{
-        font-size: 11px;
-      }
+
       .rewiew-text{
-        font-size: 10px;
+        font-size: 13px;
         margin-top: 8px;
+        margin-bottom: 0;
       }
     }
     .button-prev-next{
-      margin-top: 32px;
+      margin-top: 42px;
       margin-left: 32px;
       margin-right: 32px;
     }
   }
   .block-also-like{
+    margin-top: 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.11);
     .also-like-text{
       font-size: 16px;
@@ -1783,6 +1784,7 @@ input[type="number"] {
     button{
       font-size: 7px !important;
       padding: 7px 26px !important;
+
     }
 
     .swiper-slide{
@@ -1798,8 +1800,8 @@ input[type="number"] {
   }
 
   .faq-center{
-    justify-content: center;
     display: flex;
+    
   }
   .mini-faq{
     gap: 15px;
@@ -1808,7 +1810,48 @@ input[type="number"] {
     flex-direction: column;
     width: 322px;
     align-items: center;
+    text-align: center;
     height: 100%;
+    p{
+      font-size: 13px;
+    }
+    span{
+      font-size: 24px;
+    }
+    .mini-faq-text{
+      gap: 15px;
+      width: 390px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    .faq1{
+      order: 2;
+      height: 140px;
+      span{
+        width: 285px;
+      }
+      p{
+        width: 353px;
+      }
+    }
+    .faq2{
+      order: 1;
+      height: 182px;
+
+      p{
+        width: 353px;
+      }
+    }
+    .faq3{
+      order: 3;
+      height: 159px;
+
+      p{
+        width: 353px;
+      }
+    }
+
   }
 
   .footer{
@@ -1888,5 +1931,74 @@ input[type="number"] {
         opacity: 68%;
       }
     }
+  }
+}
+
+
+.block-choose-size{
+  margin-top: 30px;
+  position: relative;
+  gap: 5px;
+  button{
+    font-size: 24px;
+    font-weight: 900;
+    img{
+      margin-top: 7px;
+    }
+  }
+
+  .swiper {
+    width: 175px;
+    height: 236px;
+    --swiper-pagination-bottom: none;
+    --swiper-pagination-top: -30px;
+    --swiper-pagination-color: #000;
+  }
+
+  .hidden-slider {
+    padding: 34px 0 34px 0;
+    width: 285px; /* Ширина прямоугольника */
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 10;
+  }
+
+  .hidden-slider.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(5px);
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    color: #D9D9D9;
+    --swiper-navigation-sides-offset: -50px;
+    --swiper-navigation-size: 28px;
+  }
+  .swiper-button-prev:hover, .swiper-button-next:hover{
+    color: #656565;
+  }
+}
+
+.block-rev-mob{
+  text-align: center;
+  h3{
+    margin-top: 44px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.24;
+  }
+  .block-rev-mob-flex{
+    margin-top: 23px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  span{
+    font-size: 13px;
   }
 }

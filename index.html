@@ -33,20 +33,20 @@
 						  <div class="bar"></div>
 						</div>
 						<div class="dropdown-menu mobile-hidden">
-						  <a href="#">Home</a>
-						  <a href="#">Shop</a>
-						  <a href="#">About Us</a>
+						  <a href="#">HOME</a>
+						  <a href="#">SHOP</a>
+						  <a href="#">ABOUT US</a>
 						</div>
 					</div>
 
 					<div class="logo">
 						<img src="images/logo.png" alt="Logo">
 					</div>
-					<a class="mobile-hidden" href="#">Home</a>
+					<a class="mobile-hidden" href="#">HOME</a>
 					<div class="dropdown-shop mobile-hidden">
 						<div class="a-shop">
 							<a href="#">
-								<span>Shop</span>
+								<span>SHOP</span>
 								<img src="images/shop-vector.svg" alt="Logo">
 							</a>
 							<div class="dropdown-menu-shop">
@@ -57,7 +57,7 @@
 							</div>
 						</div>
 					</div>
-					<a  class="mobile-hidden" href="#">About Us</a>
+					<a  class="mobile-hidden" href="#">ABOUT US</a>
 					<div class="nav-icons ">
 						<button class="search-btn mobile-hidden">
 							<img src="images/search.svg" alt="Logo">
@@ -515,7 +515,7 @@
 					<div class="top-rew-1">Top reviews</div>
 					<div class="dropdown-container desktop-hidden">
 						<div class="custom-select">
-							<div class="selected">
+							<div class="selected"  style="font-weight: 700;">
 								<span>Top reviews</span>
 								<img src="images/arrow.svg" alt="">
 							</div>

@@ -221,7 +221,56 @@
 		</div>
 	</div>
 	<!-- 3 блок -->
-	<div class="block-line-shadow block-line-shadow-border">
+	<div class="chooseChosen mobile-hidden">
+		<div class="content">
+			<span>Choose Your Size</span>
+			<p>Get your own framed hoop for fun and games at your home or office. Imagine how much of a conversation starter this would be in your home.</p>
+			<ul>
+				<li>A conversation starter</li>
+				<li>Shows off your impeccable taste</li>
+				<li>Increases the amount of gold in your house</li>
+				<li>Dunk on your friends. (It’s functional, but we recommend lay ups, as we wouldn’t want you to damage it!)</li>
+			</ul>
+			<div class="chooseChosen-imgList">
+				<img src="images/horiont-slider-2.png" alt="">
+				<img src="images/horiont-slider-2.png" alt="">
+				<img src="images/horiont-slider-2.png" alt="">
+				<img src="images/horiont-slider-2.png" alt="">
+			</div>
+			<span>We are being chosen</span>
+			<p>Get your own framed hoop for fun and games at your home or office. Imagine how much of a conversation starter this would be in your home. Get your own framed hoop for fun and games at your home or office.</p>
+		</div>
+		<div class="chooseChosen-slider">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/block-product-main-image.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-1.png" alt="Image 1"></div>
+					<div class="swiper-slide"><img class="slider-horiz-img" src="images/horiont-slider-2.png" alt="Image 1"></div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block-line-shadow block-line-shadow-border desktop-hidden">
 		<div class="content">
 			<div class="block-slider-chosen1">
 				
@@ -257,7 +306,7 @@
 
 		</div>
 	</div>
-	<div class="block-line-shadow">
+	<div class="block-line-shadow desktop-hidden">
 		<div class="content">
 			<div class="block-slider-chosen2">
 				

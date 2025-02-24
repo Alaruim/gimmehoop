@@ -904,10 +904,12 @@ input[type="number"] {
 .block-also-like{
   margin-top: 44px;
   border-top: 1px solid #D8D8D8;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.11);
+  padding-bottom: 15px;
 }
 
 .mini-faq{
-  margin-top: 40px;
+  margin-top: 51px;
   display: flex;
   margin-left: 90px;
   margin-right: 90px;
